@@ -30,6 +30,6 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run build   # only if you have a build step
-          start: npm start       # start your app if needed
+          start: npm install       # start your app if needed
           wait-on: 'http://localhost:3000' # change port based on your app
           wait-on-timeout: 60
